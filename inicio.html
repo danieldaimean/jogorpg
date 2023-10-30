@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      background-attachment: fixed;
+      background-image: url("porta.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    #cor{
+      color: lime;
+      background-color: blueviolet;
+      opacity: 0.5;
+      width: 30%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="cor">
+    <h1>Bem vindo</h1>
+
+    <h2> Você está em um jogo de rpg em uma fase bem emocionante. Há tres portas enumeradas, qual você escolhe?</h2>
+
+    <form>
+
+      <input type="text" id="valordigitado" name="fname"><br>
+
+
+    </form>
+
+    <input type="button" onclick="mostrarValor()" value="Click Me!">
+
+    <p id="demo">estou esperando...</p>
+  </div>
+  <script>
+    function mostrarValor() {
+      // Acesse o elemento de input pelo ID
+      var inputElement = document.getElementById("valordigitado");
+
+      // Obtenha o valor da variável
+      var valor = inputElement.value;
+
+      // Use o valor )
+      if (valor==2) {
+        window.location.assign("porta2.html")
+      } 
+      if (valor==3) {
+        window.location.assign("porta3.html")
+      }
+      if (valor==1) {
+        window.location.assign("porta1.html")
+      }
+      
+    }
+
+  </script>
+
+
+ 
+
+</body>
+
+</html>

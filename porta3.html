@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      background-attachment: fixed;
+      background-image: url("venceu.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    #cor {
+      color: lime;
+      background-color: blueviolet;
+      opacity: 0.5;
+      width: 30%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="cor">
+    <h1>Parabéns, você chegou ao fim!</h1>
+
+    <h2> Quer jogar denovo?</h2>
+
+    <form>
+
+      <input type="text" id="valordigitado" name="fname"><br>
+
+
+    </form>
+
+    <input type="button" onclick="mostrarValor()" value="Click Me!">
+
+    <p id="demo">Digite "claro", "sim" ou "com certeza"...</p>
+  </div>
+  <script>
+    function mostrarValor() {
+      // Acesse o elemento de input pelo ID
+      var inputElement = document.getElementById("valordigitado");
+
+      // Obtenha o valor da variável
+      var valor = inputElement.value;
+
+      // Use o valor (modifique o atributo innerHTML com o método getElement do Documento))
+      document.getElementById("demo").innerHTML = "Você tem certeza que escolheu: " + valor + "???" + "<br>";
+
+      /* */
+      const btnSim = document.createElement("button");
+      btnSim.innerHTML = "sim";
+      btnSim.addEventListener("click", simFunction);
+      document.getElementById("demo").appendChild(btnSim);
+
+      function simFunction() {
+
+        window.location.assign("inicio.html")
+
+      }
+      const btnNao = document.createElement("button");
+      btnNao.innerHTML = "não";
+      btnNao.addEventListener("click", naoFunction);
+      document.getElementById("demo").appendChild(btnNao);
+
+      function naoFunction() {
+
+        window.location.assign("porta1.html")
+
+      }
+
+    }
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      background-attachment: fixed;
+      background-image: url("city.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    #cor{
+      color: lime;
+      background-color: blueviolet;
+      opacity: 0.5;
+      width: 30%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="cor">
+    <h1>Você viveu...</h1>
+
+    <h2> ... um final de semana feliz na praia!</h2>
+
+    <form>
+
+      <input type="text" id="valordigitado" name="fname"><br>
+
+
+    </form>
+
+    <input type="button" onclick="mostrarValor()" value="Click Me!">
+
+    <p id="demo">estou esperando...</p>
+  </div>
+  <script>
+    function mostrarValor() {
+      // Reinicia
+        window.location.assign("inicio.html")     
+    }
+
+  </script>
+
+
+ 
+
+</body>
+
+</html>
