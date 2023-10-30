@@ -10,7 +10,7 @@
       background-size: 100% 100%;
     }
 
-    #cor{
+    #cor {
       color: lime;
       background-color: blueviolet;
       opacity: 0.5;
@@ -22,14 +22,10 @@
 <body>
   <div id="cor">
     <h1>Bem vindo</h1>
-
     <h2> Você está em um jogo de rpg em uma fase bem emocionante. Há tres portas enumeradas, qual você escolhe?</h2>
 
     <form>
-
       <input type="text" id="valordigitado" name="fname"><br>
-
-
     </form>
 
     <input type="button" onclick="mostrarValor()" value="Click Me!">
@@ -45,23 +41,19 @@
       var valor = inputElement.value;
 
       // Use o valor )
-      if (valor==2) {
+      if (valor == 2) {
         window.location.assign("porta2.html")
-      } 
-      if (valor==3) {
+      }
+      if (valor == 3) {
         window.location.assign("porta3.html")
       }
-      if (valor==1) {
+      if (valor == 1) {
         window.location.assign("porta1.html")
       }
-      
+
     }
 
   </script>
-
-
- 
-
 </body>
 
 </html>

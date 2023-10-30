@@ -10,7 +10,7 @@
       background-size: 100% 100%;
     }
 
-    #cor{
+    #cor {
       color: lime;
       background-color: blueviolet;
       opacity: 0.5;
@@ -22,18 +22,14 @@
 <body>
   <div id="cor">
     <h1>você morreu</h1>
-
     <h2> quer começar denovo? (s/n)</h2>
 
     <form>
-
       <input type="text" id="valordigitado" name="fname"><br>
-
-
     </form>
 
     <input type="button" onclick="mostrarValor()" value="Click Me!">
-    
+
     <p id="demo">estou esperando...</p>
   </div>
   <script>
@@ -45,19 +41,15 @@
       var valor = inputElement.value;
 
       // Use o valor )
-      if (valor=="s") {
+      if (valor == "s") {
         window.location.assign("inicio.html")
-      } 
+      }
       else {
         window.location.assign("porta1.html")
       }
     }
 
   </script>
-
-
- 
-
 </body>
 
 </html>
