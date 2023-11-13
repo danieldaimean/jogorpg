@@ -14,15 +14,49 @@
       color: lime;
       background-color: blueviolet;
       opacity: 0.5;
-      width: 30%;
+
+      display: inline-block;
+    }
+
+    #cor2 {
+      color: lime;
+      background-color: blueviolet;
+      opacity: 0.8;
+
+      display: inline-block;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
     }
   </style>
 </head>
 
 <body>
   <div id="cor">
-    <h1>Você viveu...</h1>
-    <h2> ... feliz para sempre na cidade!</h2>
+    <h1>Digite a cor do backgroud:</h1>
+    <h2> Exemplo de cores:</h2>
+
+    <table>
+      <tr>
+        <th>Navy</th>
+        <th>aqua</th>
+        <th>Country</th>
+        <th>gray</th>
+        <th>cyan</th>
+        <th>silver</th>
+        <th>black</th>
+        <th>blue</th>
+        <th>green</th>
+        <th>olive</th>
+        <th>teal</th>
+        <th>blue</th>
+      </tr>
+    </table>
+    <p> Exemplo de cores:</p>
 
     <form>
       <input type="text" id="valordigitado" name="fname"><br>
@@ -32,10 +66,33 @@
 
     <p id="demo">estou esperando...</p>
   </div>
-  <script>
+
+  <div id="cor2">
+    <h1>Quem vai fazer essa div mudar de cor aleatoriamente?</h1>
+    <h2> usando eventos mouseover ou mouseclick...:</h2>
+
+    <p> Exemplo de cores:</p>
+
+    <form>
+      <input type="text" id="valordigitado2" name="fname"><br>
+    </form>
+
+    <input type="button" onclick="mostrarValor()" value="Click Me!">
+
+    <p id="demo">estou esperando...</p>
+  </div>
+
+
+<script>
     function mostrarValor() {
-      // Reinicia
-      window.location.assign("inicio.html")
+      // Acesse o elemento de input pelo ID
+      var inputElement = document.getElementById("valordigitado");
+
+      // Obtenha o valor da variável
+      var valor = inputElement.value;
+
+      // Use o valor )
+      document.getElementById('cor').style.backgroundColor = valor;
     }
 
   </script>
